@@ -18,7 +18,7 @@ Trained on NIH Chest X-ray Dataset: Robust dataset with diverse anomalies.
 
 Source: NIH Chest X-ray Dataset (Kaggle)
 
-Size: 85,000+ labeled X-ray images
+Size: 112,120 labeled X-ray images
 
 Findings: Pneumonia, Effusion, Nodule, Mass, Cardiomegaly, and more
 
@@ -26,13 +26,13 @@ Findings: Pneumonia, Effusion, Nodule, Mass, Cardiomegaly, and more
 
 Programming Language: Python
 
-Frameworks & Libraries: TensorFlow, Keras, PyTorch, OpenCV, Scikit-learn
+Frameworks & Libraries: TensorFlow, Keras, OpenCV, Scikit-learn
 
 Web Technologies: Streamlit for the user interface
 
 🔬 Model Training & Evaluation
 
-Preprocessing: Image resizing, normalization, and augmentation
+Preprocessing: Image resizing, and normalization
 
 Model Used: Convolutional Neural Networks (CNNs) with fine-tuning
 
