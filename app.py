@@ -2,6 +2,9 @@ import streamlit as st
 from PIL import Image
 import tensorflow as tf
 import numpy as np
+import os
+
+PORT = int(os.environ.get("PORT", 8501))
 
 # Load your trained model
 model = tf.keras.models.load_model('update_model.h5', compile=False)
@@ -47,3 +50,4 @@ if uploaded_file is not None:
 
 # Display the most likely diagnosis
     st.write(f"Most likely diagnosis: {top_diseases[0][0]} with confidence {top_diseases[0][1]:.2f}%")
+
