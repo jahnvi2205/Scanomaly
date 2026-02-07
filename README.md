@@ -4,6 +4,9 @@ Scanomaly - AI-Powered X-Ray Anomaly Detection
 
 Scanomaly is an AI-powered medical imaging solution designed to detect anomalies in X-ray images with high accuracy. This project leverages deep learning models trained on the NIH Chest X-ray dataset to identify and label potential abnormalities.
 
+Live version: https://scanomaly.onrender.com
+
+
 🎯 Key Features
 
 Automated X-ray Anomaly Detection: Uses deep learning to detect irregularities.
