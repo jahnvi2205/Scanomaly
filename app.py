@@ -16,7 +16,7 @@ categories = ["Atelectasis", "Cardiomegaly", "Effusion", "Infiltration", "Mass",
 def predict_anomaly(image):
   # Return the prediction array
     image = image.convert('RGB')  # Ensure the image has 3 channels
-    img = image.resize((224, 224))  # Resize the image to (224, 224)
+    img = image.resize((128,128))  # Resize the image to (128,128)
     img_array = np.array(img) / 255.0  # Normalize the image
     img_array = np.expand_dims(img_array, axis=0)  # Expand dimensions to match the model's input shape
     predictions = model.predict(img_array)  # Get predictions
@@ -50,5 +50,6 @@ if uploaded_file is not None:
 
 # Display the most likely diagnosis
     st.write(f"Most likely diagnosis: {top_diseases[0][0]} with confidence {top_diseases[0][1]:.2f}%")
+
 
 
