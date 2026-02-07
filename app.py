@@ -7,7 +7,7 @@ import os
 PORT = int(os.environ.get("PORT", 8501))
 
 # Load your trained model
-model = tf.keras.models.load_model('update_model.h5', compile=False)
+model = tf.keras.models.load_model('my_model.h5', compile=False)
 
 # Define categories
 categories = ["Atelectasis", "Cardiomegaly", "Effusion", "Infiltration", "Mass", "Nodule", "Pneumonia", "Pneumothorax", "No Finding"]
@@ -50,4 +50,5 @@ if uploaded_file is not None:
 
 # Display the most likely diagnosis
     st.write(f"Most likely diagnosis: {top_diseases[0][0]} with confidence {top_diseases[0][1]:.2f}%")
+
 
