@@ -3,9 +3,10 @@ pandas
 matplotlib
 seaborn
 opencv-python
-tensorflow
+tensorflow-cpu
 keras
 scikit-learn
 streamlit
 requests
 pillow
+
